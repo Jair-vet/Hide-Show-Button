@@ -1,0 +1,178 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+:root {
+    --primary-color: #3195ff;
+    --secondary-color: #333;
+    --dark-color: #000;
+    --light-color: #f4f4f4;
+    --header-opacity: 0.7;
+}
+
+body {
+    background-color: #000;
+    color: #fff;
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+}
+.bg-dark-pattern {
+    background-image: url("https://www.traversymedia.com/images/bg-pattern-1.png");
+}
+
+section {
+    padding: 20px;
+}
+.container {
+    max-width: 1100px;
+    margin: auto;
+}
+div {
+    display: block;
+}
+.course-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 40px;
+}
+
+.card {
+    background-color: #222;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgb(0 0 0 / 10%);
+    padding: 20px 30px;
+    position: relative;
+    border: #333 solid 1px;
+}
+.course-grid .course-img {
+    width: 60px;
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+.course-grid .card-body {
+    padding-top: 30px;
+    height: 150px;
+}
+
+.course-grid .level {
+    margin-bottom: 5px;
+    color: var(--primary-color);
+    text-transform: uppercase;
+}
+
+h3 {
+    display: block;
+    font-size: 1.17em;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+
+.course-grid .card-footer {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.course-grid .card-footer img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.courses .promo-code {
+    position: absolute;
+    bottom: -35px;
+    left: 50%;
+    /* right: 5px; */
+    transform: translateX(-50%);
+    font-size: 13px;
+    width: 100%;
+    text-align: center;
+    letter-spacing: 3px;
+    transition: all 0.3s ease-in-out;
+    opacity: 0;
+}
+
+.courses .promo-code span {
+    color: #ea5252;
+}
+
+.courses .promo {
+    font-size: 13px;
+    font-weight: bold;
+    color: #ea5252;
+    /* background: #000; */
+    margin-left: 10px;
+    padding: 3px;
+}
+.courses .card:hover .promo-code {
+    opacity: 1;
+}
+
+.text-primary {
+    color: var(--primary-color);
+}
+.courses h2 {
+    margin: 30px 0 20px;
+}
+section h2 {
+    text-align: center;
+}
+h2 {
+    font-size: 30px;
+}
+
+/* ! Show or Hidden */
+.course-grid.more.show {
+    display: grid;
+}
+.course-grid.more {
+    margin-top: 40px;
+    display: none;
+}
+
+
+/* ! Button */
+.btn-more {
+    margin: 40px auto;
+    width: 100%;
+}
+.btn-secondary {
+    background-color: var(--secondary-color);
+}
+.btn-secondary:hover {
+    background-color: var(--primary-color);
+}
+.btn {
+    display: inline-block;
+    border-radius: 5px;
+    text-transform: uppercase;
+    cursor: pointer;
+    /* background-color: #000; */
+    color: #fff;
+    font-size: 15px;
+    padding: 5px 25px;
+    text-align: center;
+    font-weight: 700;
+    line-height: 2.4rem;
+    border: 1px transparent solid;
+}
+
+
+/* ! Media query */
+@media (max-width: 768px) {  
+    .course-grid {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
