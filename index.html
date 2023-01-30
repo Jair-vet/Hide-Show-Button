@@ -4,10 +4,84 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+    crossorigin="anonymous"
+    referrerpolicy="no-referrer"/>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
     <title>Hide Info</title>
 </head>
 <body>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="/">
+            <img src="https://www.traversymedia.com/images/logo_long.png" alt="" />
+
+            </a>
+            <ul class="desktop-menu">
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#header">Header</a></li>
+            </ul>
+
+            <!-- Hamburger Menu -->
+            <div class="mobile-menu">
+            <input type="checkbox" class="toggler" role="checkbox" aria-checked="false" tabindex="0" />
+            <div class="hamburger"><div></div></div>
+            <div class="menu">
+                <div>
+                <div>
+                    <ul>
+                        <li><a href="#courses">Courses</a></li>
+                        <li><a href="#header">Header</a></li>    
+                    </ul>
+                </div>
+                </div>
+            </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header/Hero -->
+    <header class="header" id="header">
+        <div class="header-inner">
+          <div class="container">
+            <h5>Media</h5>
+            <h1>
+              Web Development Courses For
+              <span class="text-primary">Everyone</span>
+            </h1>
+            <p class="lead">
+              Practical project-based courses that are easy to understand and
+              straight to the point with NO FLUFF
+            </p>
+            <a href="#courses" class="btn btn-primary">Start Learning Today</a>
+  
+            <div class="stats">
+              <div class="stat">
+                <i class="fas fa-cogs fa-4x"></i>
+                <h3>15</h3>
+                <p>Years of Experience</p>
+              </div>
+              <div class="stat">
+                <i class="fas fa-graduation-cap fa-4x"></i>
+                <h3>400K+</h3>
+                <p>Course Students</p>
+              </div>
+              <div class="stat">
+                <i class="fab fa-youtube fa-4x"></i>
+                <h3>1.8M</h3>
+                <p>Subscribers</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </header>
+
     <section id="courses" class="courses bg-dark-pattern">
         <div class="container">
             <h2><span class="text-primary">Latest </span> Courses</h2>
